@@ -1,0 +1,22 @@
+{
+  "header": {
+    "accueil": "Home",
+    "actualites": "News",
+    "journal": "Journal",
+    "projets": "Projects",
+    "offres": "Offers",
+    "apropos": "About",
+    "contact": "Contact",
+    "membre": "Member",
+    "signin": "Sign In"
+  },
+  "pages": {
+    "accueil": { "title": "Home", "subtitle": "TSCM Home Page" },
+    "actualites": { "title": "News", "subtitle": "Latest TSCM news" },
+    "journal": { "title": "Journal", "subtitle": "TSCM Publications" },
+    "projets": { "title": "Projects", "subtitle": "TSCM Projects" },
+    "offres": { "title": "Offers", "subtitle": "Internships, jobs and calls" },
+    "apropos": { "title": "About", "subtitle": "Who are we?" },
+    "contact": { "title": "Contact", "subtitle": "Contact us" }
+  }
+}

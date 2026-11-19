@@ -1,0 +1,328 @@
+/* ===== POLICES JOURNAL ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap');
+
+.page-actualites {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 25px;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* ===== FILTRES ===== */
+.actualites-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 15px;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #666;
+  transition: all 0.2s;
+  font-family: inherit;
+  letter-spacing: 0.3px;
+}
+
+.filter-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-btn.active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ===== ARTICLE PRINCIPAL ===== */
+.actualites-featured {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.actualites-featured:hover {
+  opacity: 0.95;
+}
+
+.featured-image {
+  position: relative;
+  min-height: 420px;
+  background: linear-gradient(135deg, #1a3a6b 0%, #0f2547 100%);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.region-badge {
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.category-tag {
+  display: inline-block;
+  color: #f0b323;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* TITRES EN SERIF (style journal) */
+.featured-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.featured-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.article-date {
+  font-size: 12px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* ===== GRILLE ARTICLES ===== */
+.actualites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.article-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+}
+.article-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, #1a3a6b 0%, #0f2547 100%);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-bottom: 18px;
+}
+
+.region-badge-small {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+}
+
+.card-content h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: calc(1.3em * 3);
+}
+
+.card-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* ===== ARTICLE DÉTAIL ===== */
+.article-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 25px;
+  font-family: 'Inter', sans-serif;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #1a3a6b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 30px;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+}
+
+.back-btn:hover {
+  color: #f0b323;
+}
+
+.detail-image {
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+}
+
+.detail-content h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 46px;
+  font-weight: 700;
+  color: #000;
+  margin: 20px 0;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.detail-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.8;
+  margin: 30px 0;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+.read-more-btn:hover {
+  background-color: #f0b323;
+  color: #000;
+}
+
+/* ===== SANS IMAGE ===== */
+.actualites-featured.no-image {
+  grid-template-columns: 1fr;
+  min-height: 300px;
+  border-left: 4px solid #f0b323;
+  padding-left: 30px;
+}
+/* ===== SANS IMAGE ===== */
+.article-card.no-image {
+  min-height: 400px !important;
+  border: 1px solid #e5e5e5;
+  padding: 25px;
+  border-radius: 4px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.article-card.no-image .card-content {
+  padding: 0 !important;
+  flex: 1;
+}
+.article-card.no-image .card-content h3 {
+  font-size: 24px !important;
+  -webkit-line-clamp: 4;
+  min-height: calc(1.3em * 4) !important;
+}
+.article-card.no-image .card-content p {
+  -webkit-line-clamp: 6;
+  flex: 1;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .actualites-featured {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+.actualites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  align-items: stretch;
+}
+.featured-content h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+  .detail-content h1 {
+    font-size: 32px;
+  }
+}

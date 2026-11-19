@@ -1,0 +1,22 @@
+{
+  "header": {
+    "accueil": "Accueil",
+    "actualites": "Actualités",
+    "journal": "Journal",
+    "projets": "Projets",
+    "offres": "Offres",
+    "apropos": "À propos",
+    "contact": "Contact",
+    "membre": "Membre",
+    "signin": "Sign In"
+  },
+  "pages": {
+    "accueil": { "title": "Accueil", "subtitle": "Page d'accueil de TSCM" },
+    "actualites": { "title": "Actualités", "subtitle": "Les dernières nouvelles de TSCM" },
+    "journal": { "title": "Journal", "subtitle": "Publications de TSCM" },
+    "projets": { "title": "Projets", "subtitle": "Les projets de TSCM" },
+    "offres": { "title": "Offres", "subtitle": "Stages, emplois et appels à candidature" },
+    "apropos": { "title": "À propos", "subtitle": "Qui sommes-nous ?" },
+    "contact": { "title": "Contact", "subtitle": "Nous contacter" }
+  }
+}

@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap');
+
+.page-apropos {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 25px 60px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== HERO ===== */
+.apropos-hero {
+  padding: 120px 40px;
+  margin: 0 -25px 60px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  background-image: 
+    linear-gradient(rgba(10, 22, 40, 0.75), rgba(10, 22, 40, 0.85)),
+    url('https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.apropos-hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 52px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.apropos-slogan {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #f0b323;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.apropos-hero-text {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== SECTIONS ===== */
+.apropos-section {
+  margin-bottom: 70px;
+}
+
+.apropos-section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #f0b323;
+  display: inline-block;
+}
+
+.apropos-section-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 800px;
+}
+
+/* ===== MISSION ===== */
+.apropos-mission {
+  background: var(--bg-secondary);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.apropos-mission p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.apropos-mission p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== HISTOIRE ===== */
+.apropos-histoire {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.histoire-item {
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border-left: 4px solid #f0b323;
+  transition: transform 0.2s;
+}
+
+.histoire-item:hover {
+  transform: translateX(8px);
+}
+
+.histoire-annee {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: #f0b323;
+  min-width: 100px;
+}
+
+.histoire-item p {
+  font-size: 15px;
+  color: var(--text-primary);
+  line-height: 1.6;
+  align-self: center;
+}
+
+/* ===== VALEURS ===== */
+.apropos-valeurs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.valeur-card {
+  background: var(--bg-secondary);
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.valeur-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(26, 58, 107, 0.12);
+}
+
+.valeur-icon {
+  font-size: 42px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.valeur-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.valeur-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ===== BRANCHES ===== */
+.apropos-branches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.branche-card {
+  background: var(--bg-secondary);
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.branche-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.branche-card.featured {
+  border: 2px solid #f0b323;
+  background: linear-gradient(135deg, rgba(240, 179, 35, 0.05) 0%, transparent 100%);
+}
+
+.branche-flag {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.branche-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.branche-role {
+  font-size: 11px;
+  color: #f0b323;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.branche-email {
+  font-size: 11px;
+  color: var(--text-secondary);
+  word-break: break-word;
+  margin-top: 8px;
+}
+
+/* ===== ÉQUIPE ===== */
+.apropos-equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.equipe-card {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.equipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(26, 58, 107, 0.12);
+}
+
+.equipe-avatar {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 18px;
+  background: linear-gradient(135deg, #1a3a6b 0%, #0f2547 100%);
+  color: #f0b323;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 32px;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(26, 58, 107, 0.25);
+}
+
+.equipe-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.equipe-card p {
+  font-size: 12px;
+  color: #f0b323;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+/* ===== PARTENAIRES ===== */
+.apropos-partenaires {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.partenaire-card {
+  background: var(--bg-secondary);
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+.partenaire-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(240, 179, 35, 0.2);
+  border: 1px solid #f0b323;
+}
+
+/* ===== CONTACT SECTION ===== */
+.apropos-contact-section {
+  text-align: center;
+}
+
+.apropos-contact-info {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+  text-align: left;
+}
+
+.apropos-contact-info p {
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.apropos-contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.apropos-contact-info strong {
+  color: #1a3a6b;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+  .apropos-valeurs,
+  .apropos-branches,
+  .apropos-partenaires {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .apropos-equipe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .apropos-hero h1 {
+    font-size: 32px;
+  }
+  .apropos-slogan {
+    font-size: 18px;
+  }
+  .apropos-valeurs,
+  .apropos-branches,
+  .apropos-equipe,
+  .apropos-partenaires {
+    grid-template-columns: 1fr;
+  }
+  .histoire-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .apropos-section-title {
+    font-size: 24px;
+  }
+}

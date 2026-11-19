@@ -1,0 +1,45 @@
+.loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/fond.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.spinner {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.spinner-bar {
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #4dd0c7 100%);
+  border-radius: 2px;
+  top: 50%;
+  left: 50%;
+  margin-top: -6px;
+  margin-left: -2px;
+  transform-origin: center 40px;
+  animation: fade 1.2s linear infinite;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0.15; }
+}
+

@@ -1,0 +1,14 @@
+.public-interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f7fa;
+  color: #1a3a6b;
+}
+
+.public-interface h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}

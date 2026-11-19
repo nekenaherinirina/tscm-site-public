@@ -1,0 +1,71 @@
+.searchbar-container {
+  width: 100%;
+  background: var(--bg-primary);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background 0.3s;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 12px 22px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.searchbar:focus-within {
+  border-color: #f0b323;
+  box-shadow: 0 4px 16px rgba(240, 179, 35, 0.15);
+}
+
+.searchbar-icon {
+  font-size: 16px;
+  margin-right: 12px;
+  opacity: 0.6;
+}
+
+.searchbar-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.searchbar-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.searchbar-shortcut {
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+body[data-theme="dark"] .searchbar-shortcut {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .searchbar-container {
+    padding: 12px 20px;
+  }
+  .searchbar-shortcut {
+    display: none;
+  }
+}

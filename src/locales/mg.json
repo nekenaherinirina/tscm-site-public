@@ -1,0 +1,23 @@
+{
+  "header": {
+    "accueil": "Fandraisana",
+    "actualites": "Vaovao",
+    "journal": "Gazety",
+    "projets": "Tetikasa",
+    "offres": "Tolotra",
+    "apropos": "Mombamomba",
+    "contact": "Fifandraisana",
+    "membre": "Mpikambana",
+    "signin": "Hiditra"
+  },
+  "pages": {
+    "accueil": { "title": "Fandraisana", "subtitle": "Fandraisana TSCM" },
+    "actualites": { "title": "Vaovao", "subtitle": "Vaovao farany TSCM" },
+    "journal": { "title": "Gazety", "subtitle": "Navoakan'ny TSCM" },
+    "projets": { "title": "Tetikasa", "subtitle": "Tetikasa TSCM" },
+    "offres": { "title": "Tolotra", "subtitle": "Stage, asa sy antso" },
+    "apropos": { "title": "Mombamomba", "subtitle": "Iza izahay?" },
+    "contact": { "title": "Fifandraisana", "subtitle": "Mifandraisa aminay" }
+  }
+}
+

@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== THÈME CLAIR (par défaut) ===== */
+:root,
+body[data-theme="light"] {
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  
+  --header-bg: linear-gradient(135deg, #1a3a6b 0%, #0f2547 100%);
+  --header-text: #ffffff;
+  --header-border: rgba(240, 179, 35, 0.3);
+}
+
+/* ===== THÈME SOMBRE ===== */
+body[data-theme="dark"] {
+  --bg-primary: #0a1628;
+  --bg-secondary: #0f1e3d;
+  --text-primary: #ffffff;
+  --text-secondary: #a0b4d0;
+  
+  --header-bg: linear-gradient(135deg, #000000 0%, #0a1628 100%);
+  --header-text: #ffffff;
+  --header-border: rgba(240, 179, 35, 0.5);
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+}
+
+.app-main {
+  flex: 1;
+  width: 100%;
+}
